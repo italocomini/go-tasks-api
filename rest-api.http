@@ -1,0 +1,48 @@
+### criar tarefa para ser atualizada
+
+POST http://localhost:8080/tasks
+Content-Type: application/json
+
+{
+  "title": "Testar o endpoint tasks",
+  "author": "italo"
+}
+
+
+### criar tarefa para ser excluída
+
+POST http://localhost:8080/tasks
+Content-Type: application/json
+
+{
+  "title": "Tasks para ser excluída",
+  "author": "italo"
+}
+
+
+### Lista todas tarefas
+
+GET http://localhost:8080/tasks
+
+
+### pegar a tarefa 1
+
+GET http://localhost:8080/tasks/1
+
+
+### atualizar o autor da tarefa 1
+
+PATCH http://localhost:8080/tasks/1
+Content-Type: application/json
+
+{
+  "author": "Italo"
+}
+
+
+### excluir a tarefa 2
+
+DELETE http://localhost:8080/tasks/2
+Accept: application/json
+
+###
